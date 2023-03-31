@@ -1,0 +1,95 @@
+rount: sirve para redondear un decimal a la cantidad que le especifiquemos
+dolares = round(dolares,2)
+
+pass: me indica que en el futuro agregará alguna cadena de texto o valores en
+esa parte específica del código que se está programando en python
+
+: siempre luego de dos puntos se debe indentar cuatro espacios nuevos para que no falle el programa
+
+CADENAS DE CARACTERES
+
+Todos los siguientes métodos de python para cadenas de caracteres
+pueden ser invocados y utilizados de la siguiente manera
+
+nombre = nombre.upper() siendo nombre el nombre de una variable a la cuál
+vamos a implementar la función ó método, en este caso
+compuesto por el mismo nombre de la variable un punto
+y el método interno de python a implementar para cadenas
+de caracteres
+
+nombre.upper(): upper nos convierte una cadena de texto en mayusculas
+nombre.lower(): convierta cadena de texto en minúsculas
+nombre.capitalize(): Convierte la primera letra de la cadena en Mayúsculas
+nombre.strip(): strip, es un método que elimina espacios innecesarios
+nombre.replace(): Reemplaza una letra por otra. ej: nombre = nombre.replace('o', 'a')
+en este ejemplo remplaza lo que los caracteres contenidos en la
+variable nombre con la letra 'o' por la letra 'a'
+nombre[0]: muestra el primer caracter de la cadena
+letra = nombre[2]: asigna el tercer caracter de 'nombre' a la variable 'letra'
+len(nombre): arroja la cantidad de caracteres que componen la cadena
+
+slices: significa rebanadas, que es para partir el texto en fragmentos de ese texto
+por ejemplo si tengo dentro de una variable una cadena de texto puedo tomar
+sólo una parte de esa cadena de la siguiente forma
+
+nombre[3:7]: toma los caracteres contenidos en la variable pertenecientes sus espacios
+correspondientes dentro de la cadena
+nombre[3: ]: toma caracteres desde el espacio tres hasta el final
+nombre[ :8]: toma desde el principio hasta el caracter 8 de la cadena
+nombre[3:7:2] toma desde el espacio 3 hasta el siete de la cadena, pero pasando de a dos
+caracteres, o sea que para el ejemplo sólo tomaría el 3, el 5 y el 7
+
+
+Es una buena práctica en python empezar con una función main, aunque el estandar es llamarla run
+
+Entry point o punto de entrada:
+if __name__=='__main__':    //Cada vez que python se encuentra este punto de entrada empieza a correr todo
+//lo que está debajo
+
+continue: es una comando que le indica a una función que debe pasar de largo en caso que se cumpla una condición
+especificada. Ej:
+
+def run():
+for contador in range(1000):
+if contador % 2  != 0:
+    continue
+    print(contador)
+
+
+if __name__=='__main__':
+    run()
+
+break: rompe con un ciclo luego de una condición especificada. Ej:
+def run():
+    for i in range(10000):
+        print(i)
+        if i == 5678:
+            break
+
+
+if __name__=='__main__':
+    run()
+
+
+listas: en python para crear listas de elementos sólo hay que poner el nombre de la variable y asignar valores
+entre corchetes
+variable = [1 , pasta, 2.3]
+objetos.append(algo)  Este método me permitiría ingresar el valor algo a una lista
+objetos.pop(3)  Este método me permitiría borrar el elemento en la posición tres de una lista
+
+tuplas: funcionan parecido a las listas pero son inmutables, una vez ingresados los elementos no se pueden cambiar,
+la ventaja es que es mucho más eficiente para el sistema, y por ende más rápido que las listas
+variable = (1, pasta, 2.3)
+
+excepciones: funciones básicas para hacerlo
+          Try, raise, except, y finally
+
+          TRY: En el try se coloca código que esperamos que pueda lanzar algún error.
+
+          EXCEPT: En el except se maneja el error, es decir, si ocurre un error dentro del bloque de código del try, se deja de ejecutar el código del try y se ejecuta lo que se haya definido en el Except.
+
+          ELSE: El else se ejecuta sólo si no hubo ninguna excepción lanzada desde el try
+
+          FINALLY: Se ejecuta SIEMPRE, haya sido lanzada la excepción o no haya sido lanzada.
+          
+
